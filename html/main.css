@@ -12,6 +12,28 @@ header {
     height: 10em;
     padding: 1em 3em;
     color: #f5e575;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+a {
+    color: #f5e575;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 .logo {
@@ -20,11 +42,14 @@ header {
     float: left;
 }
 
-ul {
-    list-style-type: none;
+.menu {
     margin: 0;
     overflow: hidden;
     background-color: #71082c;
+}
+
+ul {
+    list-style-type: none;
 }
 
 li {
@@ -44,12 +69,10 @@ li a:hover {
 }
 
 main {
-    color: black;
-    height: 1000px;
-    width: 90%;
-    border-left: 2px bisque;
+    color: darkblue;
+    height: 60%;
+    width: 100%;
     background-color: antiquewhite;
-    padding: 2em 3em;
     float: right;
 }
 
@@ -57,10 +80,6 @@ aside {
     margin: 15px;
     width: 430px;
     float: left;
-}
-
-h3 {
-    word-spacing: 15px;
 }
 
 article {
@@ -75,8 +94,57 @@ img {
 }
 
 footer {
-    color: darkred;
-    min-height: 6em;
+    color: #f5e575;
+    min-height: 10em;
     padding: 1em 3em;
-    background-color: bisque;
+    background-color: #09236d;
+}
+
+.icons {
+    height: 40px;
+    width: 40px;
+}
+
+.right-align {
+    float: right;
+}
+
+.page-name {
+    color: #71082c;
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Calibri Light", sans-serif;
+}
+
+.gallery {
+    width: 250px;
+    height: 370px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+h3 {
+    word-spacing: 15px;
+}
+
+h4 {
+    text-align: center;
+    font-size: x-large;
+    font-family: Calibri, sans-serif;
+    font-style: italic;
+    color: #de2f22;
+}
+
+h5 {
+    text-align: left;
+    font-size: x-large;
+    font-style: italic;
+}
+
+p {
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    font-size: x-large;
 }
