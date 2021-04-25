@@ -20,7 +20,7 @@ main {
     color: black;
     height: 700px;
     width: 90%;
-    border-left: 2 px bisque;
+    border-left: 2px bisque;
     background-color: bisque;
     padding: 2em 3em;
     float: right;
@@ -30,19 +30,24 @@ aside {
     width: 400px;
     float: left;
 }
+
 p {
     font-size: x-large;
     text-align: center;
 }
+
 h3 {
     font-size: xx-large;
     text-align: center;
 }
+
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
+}
+
 h1 {
-font-size: xxx-large}
+    font-size: xxx-large
 }
