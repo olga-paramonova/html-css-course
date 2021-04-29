@@ -14,11 +14,8 @@ body {
     padding: 0 20px;
     margin: 0.5em auto 0;
 }
-div {
-    background-color: white;
-    opacity: 0.8;
-}
-form {
+
+form, div {
     background-color: white;
     opacity: 0.8;
 }

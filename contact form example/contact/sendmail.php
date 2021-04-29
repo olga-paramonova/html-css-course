@@ -11,32 +11,34 @@
 </head>
 
 <body>
-<div>
 	    <h1>Email Confirmation</h1>
-		<fieldset>
-        	<legend>Contact Information</legend>
-    		<label for="first_name">First Name:</label>
-			<input type="text" name="first_name" id="first_name" value="<?php echo $_REQUEST['first_name'] ?>" disabled><br>
-			<label for="last_name">Last Name:</label>
-			<input type="text" name="last_name" id="last_name" value="<?php echo $_REQUEST['last_name'] ?>" disabled><br>
-        	<label for="email">Email Address:</label>
-        	<input type="email" name="email" id="email" value="<?php echo $_REQUEST['email'] ?>" disabled><br>
-        	<label for="verify">Verify Email:</label>
-        	<input type="email" name="verify" id="verify" value="<?php echo $_REQUEST['email'] ?>" disabled><br>
-			<label for="phone">Phone Number:</label>
-			<input type="tel" name="phone" id="phone" value="<?php echo $_REQUEST['phone'] ?>" disabled><br>
-		</fieldset>
-		<fieldset>
-    		<legend>Message Information</legend>
-			<label for="event_date">Event Date:</label>
-			<input type="date" name="event_date" id="event_date" value="<?php echo $_REQUEST['event_date'] ?>" disabled><br>
-			<label for="occasion">Occasion:</label>
-			<input type="text" name="occasion" id="occasion" value="<?php echo $_REQUEST['occasion'] ?>" disabled><br>
-			<label for="number_of_people">Number of People:</label>
-            			<input type="number" name="number_of_people" id="number_of_people" value="<?php echo $_REQUEST['number_of_people'] ?>" disabled><br>
-			<label for="Message">Message:</label>
-			<textarea id="message" name="message" rows="4" disabled><?php echo $_REQUEST['message'] ?></textarea>
-		</fieldset>
+	    <div>
+	                <fieldset>
+                     	<legend>Contact Information</legend>
+                 		<label for="first_name">First Name:</label>
+             			<input type="text" name="first_name" id="first_name" value="<?php echo $_REQUEST['first_name'] ?>" disabled><br>
+             			<label for="last_name">Last Name:</label>
+             			<input type="text" name="last_name" id="last_name" value="<?php echo $_REQUEST['last_name'] ?>" disabled><br>
+                     	<label for="email">Email Address:</label>
+                     	<input type="email" name="email" id="email" value="<?php echo $_REQUEST['email'] ?>" disabled><br>
+                     	<label for="verify">Verify Email:</label>
+                     	<input type="email" name="verify" id="verify" value="<?php echo $_REQUEST['email'] ?>" disabled><br>
+             			<label for="phone">Phone Number:</label>
+             			<input type="tel" name="phone" id="phone" value="<?php echo $_REQUEST['phone'] ?>" disabled><br>
+             		</fieldset>
+             		<fieldset>
+                 		<legend>Message Information</legend>
+             			<label for="event_date">Event Date:</label>
+             			<input type="date" name="event_date" id="event_date" value="<?php echo $_REQUEST['event_date'] ?>" disabled><br>
+             			<label for="occasion">Occasion:</label>
+             			<input type="text" name="occasion" id="occasion" value="<?php echo $_REQUEST['occasion'] ?>" disabled><br>
+             			<label for="number_of_people">Number of People:</label>
+                         			<input type="number" name="number_of_people" id="number_of_people" value="<?php echo $_REQUEST['number_of_people'] ?>" disabled><br>
+             			<label for="Message">Message:</label>
+             			<textarea id="message" name="message" rows="4" disabled><?php echo $_REQUEST['message'] ?></textarea>
+             		</fieldset>
+        </div>
+
 <!-- This entire script, including the opening and closing ?php tags, can be nested inside of any other tag,
 such as div or p, to control positioning and formatting of confirmation message spit out by the email script -->
 <h2>
@@ -83,6 +85,5 @@ such as div or p, to control positioning and formatting of confirmation message 
 ?>
 
 </h2>
-</div>
 </body>
 </html>
