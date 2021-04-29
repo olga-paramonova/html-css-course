@@ -40,13 +40,14 @@
   if (isset($_REQUEST['email'])) { //if "email" variable is filled out, send email
   
   //Set admin email for email to be sent to (use you own MATC email address)
-    $admin_email = "username@gmatc.matc.edu"; 
+    $admin_email = "Paramano@gmatc.matc.edu";
 
   //Set PHP variable equal to information completed on the HTML form
     $email = $_REQUEST['email']; //Request email that user typed on HTML form
     $phone = $_REQUEST['phone']; //Request phone that user typed on HTML form
-    $reservation_date = $_REQUEST['reservation_date']; //Request subject that user typed on HTML form
-    $subject = $_REQUEST['subject']; //Request subject that user typed on HTML form
+    $event_date = $_REQUEST['event_date']; //Request subject that user typed on HTML form
+    $occasion = $_REQUEST['occasion']; //Request subject that user typed on HTML form
+    $number_of_people = $_REQUEST['number_of_people'];
     $message = $_REQUEST['message']; //Request message that user typed on HTML form
   //Combine first name and last name, adding a space in between
     $name = $_REQUEST['first_name'] . " " .  $_REQUEST['last_name']; 
@@ -55,7 +56,9 @@
     $body  = "From: " . $name . "\n"; 
     $body .= "Email: " . $email . "\n"; //Continue the email body
     $body .= "Phone: " . $phone . "\n"; //Continue the email body
-    $body .= "Reservation Date: " . $reservation_date . "\n"; //Continue the email body
+    $body .= "Event Date: " . $event_date . "\n"; //Continue the email body
+    $body .= "Occasion: " . $occasion . "\n";
+    $body .= "Number of people: " . $number_of_people . "\n";
     $body .= "Message: " . $message; //Continue the email body
   
   //Create the email headers for the from and CC fields of the email     

@@ -32,12 +32,13 @@ input, select, textarea {
     margin-bottom: .5em;
 }
 #buttons input {
-	width: 7em;
+    background-color: #027c8c;
+    color: white;
+    padding: 15px 32px;
 }
 fieldset {
     margin-top: 1em;
     margin-bottom: 1em;
-    padding-top: 1.5em;
 }
 legend {
     color: #d61d5c;
