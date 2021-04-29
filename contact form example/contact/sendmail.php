@@ -33,7 +33,7 @@
              			<label for="occasion">Occasion:</label>
              			<input type="text" name="occasion" id="occasion" value="<?php echo $_REQUEST['occasion'] ?>" disabled><br>
              			<label for="number_of_people">Number of People:</label>
-                         			<input type="number" name="number_of_people" id="number_of_people" value="<?php echo $_REQUEST['number_of_people'] ?>" disabled><br>
+                         			<input type="text" name="number_of_people" id="number_of_people" value="<?php echo $_REQUEST['number_of_people'] ?>" disabled><br>
              			<label for="Message">Message:</label>
              			<textarea id="message" name="message" rows="4" disabled><?php echo $_REQUEST['message'] ?></textarea>
              		</fieldset>
