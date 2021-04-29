@@ -5,12 +5,13 @@
     <meta name="description" content="Example contact form">
     <meta name="keywords" content="VICOM-128, HTML Contact Form">
 	<title>Contact Form</title>
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="../Zoo-logo_sloth.png">
     <link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/contact.css">
 </head>
 
 <body>
+<div>
 	    <h1>Email Confirmation</h1>
 		<fieldset>
         	<legend>Contact Information</legend>
@@ -38,7 +39,6 @@
 		</fieldset>
 <!-- This entire script, including the opening and closing ?php tags, can be nested inside of any other tag,
 such as div or p, to control positioning and formatting of confirmation message spit out by the email script -->
-<div>
 <h2>
 <?php
   if (isset($_REQUEST['email'])) { //if "email" variable is filled out, send email
