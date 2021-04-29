@@ -27,14 +27,18 @@
 		</fieldset>
 		<fieldset>
     		<legend>Message Information</legend>
-			<label for="reservation_date">Today's  Date:</label>
-			<input type="date" name="reservation_date" id="reservation_date" value="<?php echo $_REQUEST['reservation_date'] ?>" disabled><br>
-			<label for="subject">Subject:</label>
-			<input type="text" name="subject" id="subject" value="<?php echo $_REQUEST['subject'] ?>" disabled><br>
+			<label for="event_date">Event Date:</label>
+			<input type="date" name="event_date" id="event_date" value="<?php echo $_REQUEST['event_date'] ?>" disabled><br>
+			<label for="occasion">Occasion:</label>
+			<input type="text" name="occasion" id="occasion" value="<?php echo $_REQUEST['occasion'] ?>" disabled><br>
+			<label for="number_of_people">Number of People:</label>
+            			<input type="number" name="number_of_people" id="number_of_people" value="<?php echo $_REQUEST['number_of_people'] ?>" disabled><br>
 			<label for="Message">Message:</label>
 			<textarea id="message" name="message" rows="4" disabled><?php echo $_REQUEST['message'] ?></textarea>
 		</fieldset>
-<!-- This entire script, including the opening and closing ?php tags, can be nested inside of any other tag, such as div or p, to control positioning and formatting of confirmation message spit out by the email script -->
+<!-- This entire script, including the opening and closing ?php tags, can be nested inside of any other tag,
+such as div or p, to control positioning and formatting of confirmation message spit out by the email script -->
+<div>
 <h2>
 <?php
   if (isset($_REQUEST['email'])) { //if "email" variable is filled out, send email
@@ -79,5 +83,6 @@
 ?>
 
 </h2>
+</div>
 </body>
 </html>
