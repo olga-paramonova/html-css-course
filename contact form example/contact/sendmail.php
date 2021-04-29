@@ -5,7 +5,7 @@
     <meta name="description" content="Example contact form">
     <meta name="keywords" content="VICOM-128, HTML Contact Form">
 	<title>Contact Form</title>
-    <link rel="shortcut icon" href="../Zoo-logo_sloth.png">
+    <link rel="shortcut icon" href="images/Zoo-logo_sloth.png">
     <link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/contact.css">
 </head>
