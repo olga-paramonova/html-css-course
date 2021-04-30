@@ -38,6 +38,20 @@ h2 {
     font-weight: bold;
 }
 
+h4 {
+    font-size: xx-large;
+    display: block;
+    margin: 0.30em 0.3em 0.30em 0.30em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+}
+
 button {
     background-color: #006B00;
     border-radius: 12px;
@@ -102,6 +116,19 @@ aside {
 
 aside img {
     width: 100%;
+    margin-top: 1em;
+}
+
+aside div {
+    font-family: Tahoma, sans-serif;
+    font-size: 16pt;
+    overflow: auto;
+    background-color: #FFD966;
+    float: right;
+    color: white;
+    width: 40%;
+    padding: 0 0 0 2%;
+    margin: 2% 1%;
 }
 
 article {
@@ -111,16 +138,29 @@ article {
 .div_title {
     font-family: Tahoma, sans-serif;
     font-size: 16pt;
-
-}
-
-article div {
     overflow: auto;
     background-color: #8A4500;
     color: white;
     width: 40%;
     padding: 0 0 0 2%;
     margin: 2% 1%;
+}
+.div_title_long {
+    font-family: Tahoma, sans-serif;
+    font-size: 16pt;
+    overflow: auto;
+    background-color: #8A4500;
+    color: white;
+    width: 93%;
+    padding: 0 0 0 2%;
+    margin: 2% 1%;
+}
+
+article div {
+    overflow: auto;
+    background-color: #FFD966;
+    width: 40%;
+    margin: 2em;
 }
 
 article img {
@@ -162,11 +202,16 @@ footer {
     padding: 1em 3em;
     background-color: #8A4500;
     list-style-type: none;
+    margin-top: 4em;
 }
 
 .icons {
     height: 40px;
     width: 40px;
+}
+
+div table {
+    width: 90%;
 }
 
 table {
@@ -175,12 +220,6 @@ table {
 
 th {
     width: 27%;
-}
-
-h5 {
-    text-align: center;
-    font-size: x-large;
-    font-style: italic;
 }
 
 p {

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Plan Your Event Contact Form Local County Zoo">
+    <meta name="keywords" content="Plan Your Event Contact Form Local County Zoo">
+    <title>Plan Your Event Contact Form</title>
+    <link rel="shortcut icon" href="../images/Zoo-logo_sloth.png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+<h1>Plan Your Event</h1>
+<h2>Contact Form</h2>
+<form action="sendmail.php" method="post" name="contact_form" id="contact_form">
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" id="first_name" required><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" id="last_name" required><br>
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" required><br>
+        <label for="verify">Verify Email:</label>
+        <input type="email" name="verify" id="verify" required autocomplete="off"><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="999-999-9999" required><br>
+        <label for="preferred_communication_method">Preferred Communication Method:</label>
+        <select name="preferred_communication_method" id="preferred_communication_method"><br>
+            <option value="email">Email</option>
+            <option value="phone_call">Phone Call</option>
+            <option value="text">Text</option>
+            <option value="Doesn't_matter">Doesn't Matter</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Event Information</legend>
+        <label for="event_date">Event Date:</label>
+        <input type="date" name="reservation_date" id="today_date" required><br>
+        <label for="occasion">Occasion:</label>
+        <select name="occasion" id="occasion">
+            <option value="Birthday">Birthday</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Corporate">Corporate</option>
+            <option value="Romantic Date">Romantic Date</option>
+            <option value="Holiday">Holiday</option>
+        </select><br>
+        <label for="Number_of_people">Number of People:</label>
+        <select name="number_of_people" id="number_of_people">
+            <option value="1-5">1-5</option>
+            <option value="5-15">5-15</option>
+            <option value="15-30">15-30</option>
+            <option value="30+">30+</option>
+        </select><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    </fieldset>
+    <fieldset id="buttons">
+        <legend>Submit Your Email Message</legend>
+        <label>Paramano@gmatc.matc.edu</label>
+        <input type="submit" id="submit" value="Send Email">
+        <input type="reset" id="reset" value="Reset"><br>
+    </fieldset>
+</form>
+</body>
+</html>
