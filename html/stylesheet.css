@@ -51,3 +51,10 @@ img {
 h1 {
     font-size: xxx-large
 }
+
+.active {
+    background-color: #4CAF50;
+}
+.event {
+
+}
